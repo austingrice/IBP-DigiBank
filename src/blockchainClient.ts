@@ -35,12 +35,12 @@ export module BlockChainModule {
         console.log('Connected to Fabric gateway.');
 
         // Connect to our local fabric
-        const network = await gateway.getNetwork('mychannel');
+        const network = await gateway.getNetwork('<Your_Channel_Here>');
 
         console.log('Connected to mychannel. ');
 
         // Get the contract we have installed on the peer
-        const contract = await network.getContract('papernet-js');
+        const contract = await network.getContract('papercontract');
 
 
         let networkObj = {
